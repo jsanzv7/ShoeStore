@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeFragment">
+
+<ImageView
+    android:id="@+id/hello_iv"
+    app:srcCompat="@drawable/hello"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="132dp"
+    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"/>
+
+<TextView
+    android:id="@+id/welcome_tv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="132dp"
+    android:text="Welcome"
+    app:layout_constraintEnd_toEndOf="@id/hello_iv"
+    app:layout_constraintStart_toStartOf="@id/hello_iv"
+    app:layout_constraintTop_toTopOf="@id/hello_iv" />
+
+<TextView
+    android:id="@+id/welcome_message_tv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:text="SANZ Footwear is the go-to store for fashion conscious consumers because of its wide selection of reasonably priced, on-trend accessories and footwear."
+    android:textAlignment="center"
+    android:layout_marginTop="40dp"
+    app:layout_constraintEnd_toEndOf="@+id/welcome_tv"
+    app:layout_constraintStart_toStartOf="@+id/welcome_tv"
+    app:layout_constraintTop_toBottomOf="@+id/welcome_tv" />
+
+<Button
+    android:id="@+id/next_button_welcome_fragment"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="250dp"
+    android:text="NEXT"
+    android:ems="12"
+    android:backgroundTint="#3897f0"
+    android:textColor="#ffffff"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/welcome_message_tv" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
