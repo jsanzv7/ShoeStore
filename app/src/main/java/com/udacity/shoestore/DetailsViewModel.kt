@@ -1,6 +1,7 @@
 package com.udacity.shoestore
 
 import android.util.Log
+import androidx.core.text.isDigitsOnly
 import androidx.databinding.BaseObservable
 import androidx.databinding.Bindable
 import androidx.databinding.Observable
@@ -41,14 +42,22 @@ class DetailsViewModel :  ViewModel() {
 
     fun onEventSave(name: String, size: String, company: String, description: String) {
         Log.i("ShoeViewModel", "onEventSave name $name company $company")
+        var sizeDouble : Double = 0.0
+        if(size.isNotEmpty() && size.isDigitsOnly()){
+            sizeDouble = size.toDouble()
+            addShoe(name, sizeDouble, company, description)
+            _saveState.value = SaveState.SAVE
+        }
+            /*
+            try {
+                sizeDouble = size.toDouble()
+                addShoe(name, sizeDouble, company, description)
+                _saveState.value = SaveState.SAVE
 
-            var sizeDouble : Double = 0.0
-            try { sizeDouble = size.toDouble()
         } catch (e: NumberFormatException) {
             Timber.i("Invalid size entered")
         }
-        addShoe(name, sizeDouble, company, description)
-        _saveState.value = SaveState.SAVE
+*/
     }
     fun onEventSaveComplete() {
         _saveState.value = SaveState.NOOP

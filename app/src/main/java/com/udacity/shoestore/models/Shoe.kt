@@ -1,6 +1,7 @@
 package com.udacity.shoestore.models
 
 import android.os.Parcelable
+import androidx.core.text.isDigitsOnly
 import androidx.databinding.BaseObservable
 import androidx.databinding.Bindable
 import kotlinx.android.parcel.Parcelize
@@ -47,6 +48,8 @@ data class Shoe(
     }
 
     fun setSize(value: String) {
-        size = value.toDouble()
+        if(value.isNotEmpty() && value.isDigitsOnly()) {
+            size = value.toDouble()
+        }
     }
 }
