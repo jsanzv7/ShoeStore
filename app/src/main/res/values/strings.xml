@@ -101,4 +101,19 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
+    <string name="instructions_text_body">Hit next to review and admire our popular selections for the season. You can add the shoe details of our upcoming collection in this app.</string>
+    <string name="welcome_text_body">SANZ Footwear is the go-to store for fashion conscious consumers because of its wide selection of reasonably priced, on-trend accessories and footwear.</string>
+    <string name="welcome_title">Welcome</string>
+    <string name="instructions_title_tv">Instructions</string>
+    <string name="next_button_text">Next</string>
+    <string name="shoe_name">Shoe Name</string>
+    <string name="company_name">Company Name</string>
+    <string name="description">Description</string>
+    <string name="shoe_size">Shoe Size</string>
+    <string name="save_button_text">Save</string>
+    <string name="cancel_button_text">Cancel</string>
+    <string name="salinger_lace_up_boots_hint">Salinger Lace-up Boots</string>
+    <string name="_company_name_hint">Sanz</string>
+    <string name="product_description_hint">From suits to tapered trousers, these refined brogue boots pair well with everything.</string>
+    <string name="shoe_size_hint">11</string>
 </resources>

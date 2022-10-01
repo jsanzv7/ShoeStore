@@ -6,6 +6,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginHorizontal="@dimen/text_margin"
     tools:context=".WelcomeFragment">
 
 <ImageView
@@ -14,7 +15,6 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginTop="132dp"
-    app:layout_constraintHorizontal_bias="0.498"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintStart_toStartOf="parent"/>
@@ -23,38 +23,36 @@
     android:id="@+id/welcome_tv"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginTop="132dp"
-    android:text="Welcome"
+    android:layout_marginTop="16dp"
+    android:text="@string/welcome_title"
+    android:textSize="24sp"
+    app:layout_constraintTop_toBottomOf="@+id/hello_iv"
     app:layout_constraintEnd_toEndOf="@id/hello_iv"
-    app:layout_constraintStart_toStartOf="@id/hello_iv"
-    app:layout_constraintTop_toTopOf="@id/hello_iv" />
+    app:layout_constraintStart_toStartOf="@+id/hello_iv"/>
 
 <TextView
     android:id="@+id/welcome_message_tv"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:text="SANZ Footwear is the go-to store for fashion conscious consumers because of its wide selection of reasonably priced, on-trend accessories and footwear."
+    android:text="@string/welcome_text_body"
     android:textAlignment="center"
-    android:layout_marginTop="40dp"
-    app:layout_constraintEnd_toEndOf="@+id/welcome_tv"
-    app:layout_constraintStart_toStartOf="@+id/welcome_tv"
+    android:layout_marginTop="24dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/welcome_tv" />
 
 <Button
     android:id="@+id/next_button_welcome_fragment"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginTop="250dp"
-    android:text="NEXT"
+    android:text="@string/next_button_text"
     android:ems="12"
     android:backgroundTint="#3897f0"
     android:textColor="#ffffff"
+    app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.498"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/welcome_message_tv" />
+    android:layout_marginBottom="48dp"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

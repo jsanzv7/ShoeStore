@@ -4,12 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/edittext_bg.xml" value="0.345" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.6997282608695652" />
-        <entry key="app/src/main/res/layout/fragment_details.xml" value="0.5828804347826086" />
-        <entry key="app/src/main/res/layout/fragment_instructions.xml" value="0.43237561317449197" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.5721854304635762" />
+        <entry key="app/src/main/res/layout/fragment_details.xml" value="0.4627659574468085" />
+        <entry key="app/src/main/res/layout/fragment_instructions.xml" value="0.4148148148148148" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.6997282608695652" />
-        <entry key="app/src/main/res/layout/fragment_shoe_list.xml" value="0.20572916666666666" />
-        <entry key="app/src/main/res/layout/fragment_welcome.xml" value="0.540625" />
+        <entry key="app/src/main/res/layout/fragment_shoe_list.xml" value="0.4627659574468085" />
+        <entry key="app/src/main/res/layout/fragment_welcome.xml" value="0.4592198581560284" />
         <entry key="app/src/main/res/layout/shoe_row.xml" value="0.35131712259371833" />
         <entry key="app/src/main/res/menu/log_menu.xml" value="0.7828125" />
         <entry key="app/src/main/res/menu/logout_menu.xml" value="0.49722222222222223" />

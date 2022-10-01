@@ -7,6 +7,7 @@
     android:id="@+id/instructions_Layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginHorizontal="@dimen/text_margin"
     tools:context=".InstructionsFragment">
 
 
@@ -21,15 +22,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
-
     <TextView
         android:id="@+id/instruction_textview_fragment_instruction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Instructions"
         android:layout_marginTop="16dp"
+        android:text="@string/instructions_title_tv"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@id/instructions_iv"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@id/instructions_iv"
         app:layout_constraintTop_toBottomOf="@id/instructions_iv" />
 
@@ -39,28 +39,23 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:textAlignment="center"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:text="Hit next to review and admire our popular selections for the season. You can add the shoe details of our upcoming collection in this app."
-        app:layout_constraintEnd_toEndOf="@+id/instruction_textview_fragment_instruction"
-        app:layout_constraintStart_toStartOf="@+id/instruction_textview_fragment_instruction"
+        android:text="@string/instructions_text_body"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/instruction_textview_fragment_instruction" />
 
     <Button
         android:id="@+id/next_button_instructions_fragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="Next"
+        android:text="@string/next_button_text"
         android:ems="12"
         android:backgroundTint="#3897f0"
         android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/instructions_line_1"
-        app:layout_constraintVertical_bias="0.5" />
+        android:layout_marginBottom="48dp"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

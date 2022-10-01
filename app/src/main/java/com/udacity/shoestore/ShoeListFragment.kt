@@ -28,7 +28,7 @@ class ShoeListFragment : Fragment() {
 
         viewModel.shoeList.observe(this as LifecycleOwner, Observer {
 
-            for (shoe in viewModel.shoeList.value!!) {
+            viewModel.shoeList.value?.forEach { shoe ->
                 val inBinding = ShoeRowBinding.inflate(layoutInflater)
                 inBinding.shoeData = shoe
                 binding.shoeListLinearLayout.addView(inBinding.root)
@@ -36,8 +36,6 @@ class ShoeListFragment : Fragment() {
         })
 
         binding.addShoeButton.setOnClickListener {
-            Timber.i("in addShoeButton listener")
-            Timber.i(viewModel.shoeList.value?.joinToString(separator = "\n"))
             val action = ShoeListFragmentDirections.actionShoeListFragmentToDetailsFragment()
             findNavController().navigate(action)
         }

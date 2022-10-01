@@ -16,8 +16,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         binding = DataBindingUtil.setContentView<ActivityMainBinding>(this,R.layout.activity_main)
-        Timber.plant(Timber.DebugTree())
-        Timber.i("In activity main onCreate")
 
         val navController = findNavController(R.id.nav_host_fragment)
         setSupportActionBar(binding.toolbar)
@@ -37,7 +35,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onSupportNavigateUp(): Boolean {
-        Timber.i("in onSupportNavigateUp")
         return findNavController(R.id.nav_host_fragment).navigateUp() || super.onSupportNavigateUp()
     }
 }
